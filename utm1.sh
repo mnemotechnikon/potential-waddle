@@ -4,7 +4,10 @@
 # read PLIK
 # PLIK="adreses.txt"
 PLIK=$1
-SKRYPT="niechciane.sh"
+SKRYPT="niechciane.script"
+
+# Konwersja pliku wejsciowego CRLF --> LF
+sed -i 's/\r$//' $PLIK
 
 # Utworzenie tablicy
 declare -a ADRESY
