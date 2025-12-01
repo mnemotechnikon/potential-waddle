@@ -6,7 +6,8 @@
 PLIK=$1
 SKRYPT="niechciane.script"
 
-# Konwersja pliku wejsciowego CRLF --> LF
+# Konwersja pliku wejsciowego
+# zmiana konca linii
 sed -i 's/\r$//' $PLIK
 
 # Utworzenie tablicy
